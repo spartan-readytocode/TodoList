@@ -1,0 +1,151 @@
+/* Box */
+.mainbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Form */
+.new-item-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.form-row label {
+  margin-right: 10px;
+}
+
+.form-row input {
+  width: 250px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  animation: bounceIn 1s;
+}
+
+.form-row button {
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  animation: pulse 1s;
+}
+
+/* List */
+.list {
+  list-style-type: none;
+  padding: 0;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.list li label {
+  margin-right: 10px;
+  animation: fadeIn 1s;
+}
+
+.list li input {
+  width: 20px;
+  height: 20px;
+  animation: zoomIn 1s;
+}
+
+.list li button {
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  animation: shake 1s;
+}
+
+.header {
+  text-align: center;
+}
+
+/* Animation */
+@keyframes bounceIn {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(-5px);
+  }
+
+  25%,
+  75% {
+    transform: translateX(5px);
+  }
+
+  50% {
+    transform: translateX(-5px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
